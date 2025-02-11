@@ -18,11 +18,13 @@ type Request struct {
 
 // SecretData estructura de respuesta
 type SecretData struct {
-	Username string `json:"username"`
-	Password string `json:"password"`
-	Host     string `json:"host"`
-	Port     int    `json:"port"`
-	Database string `json:"database"`
+	Username             string `json:"username"`
+	Password             string `json:"password"`
+	Engine               string `json:"engine"`
+	Host                 string `json:"host"`
+	Port                 int    `json:"port"`
+	Ddbname              string `json:"dbname"`
+	DbInstanceIdentifier string `json:"dbInstanceIdentifier"`
 }
 
 // HandleRequest maneja la invocación de Lambda
